@@ -1,1 +1,24 @@
+# NEXT WORD PREDICTOR 
 
+
+Next Word Prediction using LSTM
+This project demonstrates a neural network model that predicts the next word in a sequence using an LSTM (Long Short-Term Memory) network. The model is built using TensorFlow and Keras and is trained on a dataset containing 5825 unique words. The primary objective is to generate text by predicting the next word based on the context provided by the previous words.
+
+Project Overview
+Tokenization
+The data is tokenized using Keras' Tokenizer, converting text into sequences of integers. Each unique word is assigned a unique integer.
+
+Dataset Preparation
+The input sequences are prepared from the tokenized data. Each sequence is padded to ensure uniform length, which is necessary for training the LSTM model.
+
+Model Architecture
+The model comprises:
+
+An Embedding layer with an input dimension of 5826 (vocabulary size + 1) and output dimension of 100.
+An LSTM layer with 150 units.
+A Dense layer with 5825 units and softmax activation for multi-class classification.
+Training
+The model is compiled with categorical crossentropy loss and the Adam optimizer. It is trained for 100 epochs.
+
+Prediction
+The model predicts the next word in a sequence. It can also generate a sequence of 10 words based on an initial input text.
