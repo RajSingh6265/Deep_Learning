@@ -1,1 +1,6 @@
+This project utilizes deep learning techniques to predict text from images. The predict_step function processes a batch of images provided as file paths, displaying each image using matplotlib and generating text predictions using a pre-trained model. Key components include:
 
+Dependencies: Ensure Python environment with necessary libraries (torch, transformers, matplotlib).
+Setup: Update paths to images and configure feature_extractor, model, tokenizer, and device.
+Usage: Call predict_step(image_paths) with a list of image file paths to visualize each image and obtain predicted text.
+This project leverages Python, deep learning frameworks (PyTorch), and natural language processing tools (Hugging Face Transformers) to bridge image data with text generation tasks. It's designed for applications requiring visual content understanding and textual insights.
